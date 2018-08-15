@@ -1,0 +1,2 @@
+# -Boooood-.-elkmdkmdkmd
+Alone."

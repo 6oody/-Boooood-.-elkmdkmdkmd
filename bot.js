@@ -28,4 +28,31 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
+
+
+ client.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+يا قلبي 
+لو سمحت طلب ادخل السيرفر
+                               [ https://discord.gg/pxzKv8e ] 
+الدعووة خاصة لك  ... [ ${member}  ]
+**`)
+}).catch(console.error)
+
+})
+ 
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+يا قلبي 
+لو سمحت طلب ادخل السيرفر
+                               [ https://discord.gg/pxzKv8e ] 
+الدعووة خاصة لك  ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
+
 client.login(process.env.BOT_TOKEN);

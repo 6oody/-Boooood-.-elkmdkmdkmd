@@ -36,7 +36,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
 **
 يا قلبي 
 لو سمحت طلب ادخل السيرفر
-                               [ https://discord.gg/vrZjNc3 ] 
+                               [ https://discord.gg/XusCqfF ] 
 الدعووة خاصة لك  ... [ ${member}  ]
 **`)
 }).catch(console.error)
@@ -49,7 +49,7 @@ client.on("guildMemberAdd", member => {
 **
 يا قلبي 
 لو سمحت طلب ادخل السيرفر
-                               [ https://discord.gg/vrZjNc3 ] 
+                               [ https://discord.gg/XusCqfF ] 
 الدعووة خاصة لك  ... [ ${member}  ]
 **`) 
 }).catch(console.error)

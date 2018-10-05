@@ -27,32 +27,11 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
-
-
-
- client.on("guildMemberRemove", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(` 
-**
-يا قلبي 
-لو سمحت طلب ادخل السيرفر
-                               [ https://discord.gg/XusCqfF ] 
-الدعووة خاصة لك  ... [ ${member}  ]
-**`)
-}).catch(console.error)
-
-})
- 
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(` 
-**
-يا قلبي 
-لو سمحت طلب ادخل السيرفر
-                               [ https://discord.gg/XusCqfF ] 
-الدعووة خاصة لك  ... [ ${member}  ]
-**`) 
-}).catch(console.error)
-})
-
+ client.on('ready', async () => {
+var rebel = "476962060354322444";//هنا حط أيدي الروم المراد التكرار فيه
+var ReBel = `**Coooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooods**`;//هنا حط الكلام اللي تبيه
+setInterval(() => {
+client.channels.get(rebel).send(ReBel);
+},305);
+}); 
 client.login(process.env.BOT_TOKEN);
